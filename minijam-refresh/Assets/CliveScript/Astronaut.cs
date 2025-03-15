@@ -9,6 +9,7 @@ public class Astronaut : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     }
 
+    
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Planet"))
@@ -17,4 +18,5 @@ public class Astronaut : MonoBehaviour
             // Implement game over logic here (e.g., restart scene, show UI)
         }
     }
+    
 }

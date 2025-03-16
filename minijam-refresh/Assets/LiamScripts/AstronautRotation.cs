@@ -12,7 +12,7 @@ public class AstronautRotation : MonoBehaviour
 
         Vector2 direction = planetPos.planetRb.position - astronaut.position; 
         //astronaut.transform.up = direction.normalized; 
-        float speed = 15f;
+        float speed = 30f;
         var step = speed*Time.deltaTime;
 
 

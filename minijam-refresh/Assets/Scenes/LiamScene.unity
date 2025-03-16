@@ -267,27 +267,14 @@ GameObject:
   - component: {fileID: 950921399}
   - component: {fileID: 950921398}
   - component: {fileID: 950921397}
-  - component: {fileID: 950921396}
+  - component: {fileID: 950921400}
   m_Layer: 0
   m_Name: Planet (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &950921396
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 950921395}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 96119cf230f304e45812680e7989fffd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rb: {fileID: 950921398}
+  m_IsActive: 1
 --- !u!212 &950921397
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -340,7 +327,7 @@ SpriteRenderer:
   m_Size: {x: 10.8, y: 10.8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!50 &950921398
@@ -355,7 +342,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 2
+  m_Mass: 25
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 0
@@ -379,12 +366,26 @@ Transform:
   m_GameObject: {fileID: 950921395}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0, z: -0.005132783, w: 0.9999868}
-  m_LocalPosition: {x: 0.45, y: 2.1, z: 0}
-  m_LocalScale: {x: 0.1818, y: 0.1818, z: 0.1818}
+  m_LocalPosition: {x: 1.21, y: -2.99, z: 0}
+  m_LocalScale: {x: 0.1178064, y: 0.1178064, z: 0.1178064}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -0.588}
+--- !u!114 &950921400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 950921395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d40fbf9b82c9364b89872996fe56bbf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  planetType: 0
+  planetRb: {fileID: 950921398}
 --- !u!1 &1166916541
 GameObject:
   m_ObjectHideFlags: 0
@@ -397,6 +398,7 @@ GameObject:
   - component: {fileID: 1166916542}
   - component: {fileID: 1166916543}
   - component: {fileID: 1166916545}
+  - component: {fileID: 1166916546}
   m_Layer: 0
   m_Name: Astronaut
   m_TagString: Untagged
@@ -416,7 +418,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 10
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 0
@@ -483,7 +485,7 @@ SpriteRenderer:
   m_Size: {x: 10.8, y: 11.78}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1166916544
@@ -495,7 +497,7 @@ Transform:
   m_GameObject: {fileID: 1166916541}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.46, y: 0, z: 0}
+  m_LocalPosition: {x: -3.52, y: 0.03, z: 0}
   m_LocalScale: {x: 0.12767163, y: 0.12767163, z: 0.12767163}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -514,6 +516,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 1166916542}
+  astronautRotation: {fileID: 1166916546}
+  maxForce: 0
+  maxForcePlanet: {fileID: 0}
+--- !u!114 &1166916546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1166916541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16c068461bc18e442af50a3740392d34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  astronaut: {fileID: 1166916542}
 --- !u!1 &1774535158
 GameObject:
   m_ObjectHideFlags: 0
@@ -585,7 +603,7 @@ SpriteRenderer:
   m_Size: {x: 10.8, y: 10.8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!50 &1774535161
@@ -600,7 +618,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 5
+  m_Mass: 15
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 0
@@ -624,7 +642,7 @@ Transform:
   m_GameObject: {fileID: 1774535158}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0, z: -0.005132783, w: 0.9999868}
-  m_LocalPosition: {x: 3.55, y: 0.010000003, z: 0}
+  m_LocalPosition: {x: 3.32, y: 0.34, z: 0}
   m_LocalScale: {x: 0.1818, y: 0.1818, z: 0.1818}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -642,6 +660,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d40fbf9b82c9364b89872996fe56bbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  planetType: 0
   planetRb: {fileID: 1774535161}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

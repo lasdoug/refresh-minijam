@@ -29,33 +29,11 @@ public class Clicker : MonoBehaviour
             
         var collider = Physics2D.OverlapPoint(point);
         
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButton(0))
         {
             if (collider != null)
             {
-                if (collider.GetComponent<PlanetClass>() != null)
-                {
-                    var _planet = collider.GetComponent<PlanetClass>();
-                    _planet.IncreaseScale();
-                    _planet.IncreaseMass();
-                }
-            }
-            else
-            {
-                print("did not hit");
-            }
-        }
-
-        if (Input.GetMouseButtonDown(1))
-        {
-            if (collider != null)
-            {
-                if (collider.GetComponent<PlanetClass>() != null)
-                {
-                    var _planet = collider.GetComponent<PlanetClass>();
-                    _planet.DecreaseScale();
-                    _planet.DecreaseMass();
-                }
+                collider.gameObject.transform.position = point;
             }
             else
             {

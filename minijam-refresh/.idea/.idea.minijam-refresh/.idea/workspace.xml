@@ -5,16 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="478f0da2-6777-4f20-95ad-a341b7355db0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.minijam-refresh/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.minijam-refresh/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CliveScript/GravityManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CliveScript/GravityManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CliveScript/PlanetClass.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CliveScript/PlanetClass.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/DougScripts/Clicker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/DougScripts/Clicker.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Images/planets/planet1.png.png_BACKUP_2048.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Images/planets/planet1.png.png_BASE_2048.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Images/planets/planet1.png.png_LOCAL_2048.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Images/planets/planet1.png.png_REMOTE_2048.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/CliveScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/CliveScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/DougScene2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DougScene2.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -801,6 +801,8 @@ GameObject:
   - component: {fileID: 1166916542}
   - component: {fileID: 1166916543}
   - component: {fileID: 1166916546}
+  - component: {fileID: 1166916548}
+  - component: {fileID: 1166916547}
   m_Layer: 0
   m_Name: Astronaut
   m_TagString: Astronaut
@@ -951,6 +953,35 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.12, y: 0.12}
   m_EdgeRadius: 0
+--- !u!114 &1166916547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1166916541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16c068461bc18e442af50a3740392d34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  astronaut: {fileID: 1166916542}
+--- !u!114 &1166916548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1166916541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96119cf230f304e45812680e7989fffd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 1166916542}
+  astronautRotation: {fileID: 1166916547}
+  maxForce: 0
+  maxForcePlanet: {fileID: 0}
 --- !u!1 &1210253730
 GameObject:
   m_ObjectHideFlags: 0
@@ -1191,26 +1222,20 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 1.57
---- !u!249 &1774535165
-AreaEffector2D:
-  serializedVersion: 2
+--- !u!114 &1774535165
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1774535158}
   m_Enabled: 1
-  m_UseColliderMask: 1
-  m_ColliderMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_UseGlobalAngle: 0
-  m_ForceAngle: 180
-  m_ForceMagnitude: -10
-  m_ForceVariation: 0
-  m_ForceTarget: 0
-  m_Drag: 0
-  m_AngularDrag: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d40fbf9b82c9364b89872996fe56bbf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  planetType: 0
+  planetRb: {fileID: 1774535161}
 --- !u!1 &1882305433
 GameObject:
   m_ObjectHideFlags: 0

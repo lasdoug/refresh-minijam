@@ -15,6 +15,8 @@ public class PlanetClass : MonoBehaviour
     public float radius { get; private set; }
     public readonly float G = 6.67f;
 
+    public bool isRepulsing { get; protected set; } 
+
     // List of all planets
     public static List<PlanetClass> allPlanets = new List<PlanetClass>();
 
@@ -27,6 +29,7 @@ public class PlanetClass : MonoBehaviour
         // Set random mass and radius of planet
         mass = Random.Range(minMass, maxMass);
         radius = Random.Range(minRadius, maxRadius);
+        isRepulsing = false;
 
         // Set scale of planet
         transform.localScale = new Vector3(0.1f, 0.1f, 1f);

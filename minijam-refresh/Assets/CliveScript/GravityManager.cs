@@ -18,7 +18,17 @@ public class GravityManager : MonoBehaviour
     {
         foreach (PlanetClass planet in PlanetClass.allPlanets)
         {
-            ApplyGravity(planet);
+            Debug.Log("Planet Mass: " + planet.mass + " Radius: " + planet.radius + " G: " + planet.G);
+            if (planet.isRepulsing)
+            {
+                ApplyRepulsion(planet);
+                
+            }
+            else
+            {
+                ApplyGravity(planet);
+                Debug.Log("Planet is attracting");
+            }
         }
 
     }
@@ -42,5 +52,27 @@ public class GravityManager : MonoBehaviour
 
         // Apply force to astronaut
         astronautRb.AddForce(force);    // Apply force to astronaut
+    }
+
+    // Apply repulsion force 
+    void ApplyRepulsion(PlanetClass planet)
+    {
+        Vector2 direction = planet.transform.position - astronaut.transform.position;   // Direction vector between planet and astronaut
+        float distance = direction.magnitude;   // Distance magnitude between planet and astronaut
+
+        // Prevents division by zero
+        if (distance <= 0)
+        {
+            Debug.LogError("Distance between planet and astronaut is zero");
+            return;
+        }
+
+        // Calculate force magnitude and direction
+        float forceMagnitude = planet.G * (planet.mass * astronautRb.mass) / (distance * distance); // Calculate force magnitude
+        Vector2 force = -direction.normalized * forceMagnitude;  // Normalised direction vector and scaled by force magnitude
+
+        // Apply force to astronaut
+        astronautRb.AddForce(force);    // Apply force to astronaut
+        Debug.Log("Planet is repulsing");
     }
 }

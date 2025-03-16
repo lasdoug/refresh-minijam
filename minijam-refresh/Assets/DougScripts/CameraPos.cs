@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class CameraLogic : MonoBehaviour
+public class CameraPos : MonoBehaviour
 {
     [SerializeField] private Transform target;
     [SerializeField] private float snappiness = 0.25f;

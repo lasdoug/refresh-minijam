@@ -45,7 +45,7 @@ public class Attractor : MonoBehaviour
             if (Mathf.Abs(forceMagnitude) > maxForce){
                 maxForce = forceMagnitude;
                 //astronautRotation.rotateAstronaut(maxForce, rbToAttract.position);
-                print("max force: "+maxForce);
+                // print("max force: "+maxForce);
                 maxForcePlanet = objToAttract;
             }
             //rb.transform.up = -direction.normalized;
@@ -58,7 +58,7 @@ public class Attractor : MonoBehaviour
 
             if(distance <= 1.5f){
                 rb.AddForce(force, ForceMode2D.Impulse);
-                print("within distance");
+                // print("within distance");
             }
         }
 

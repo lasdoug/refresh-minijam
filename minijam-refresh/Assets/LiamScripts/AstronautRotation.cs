@@ -21,7 +21,7 @@ public class AstronautRotation : MonoBehaviour
         //astronaut.transform.up;
         var desiredRotation = Quaternion.AngleAxis(angle, Vector3.forward);
         astronaut.transform.rotation = Quaternion.RotateTowards(astronaut.transform.rotation, desiredRotation, step);
-        print("angle: "+angle);
+        // print("angle: "+angle);
         //print("astronaut rotation: "+astronaut.transform.rotation+" step : "+step+" direction: "+direction+" Quaternion.Euler(direction.normalized): "+Quaternion.Euler(direction.normalized)+" astronaut.transform.rotation: "+astronaut.transform.rotation);
     
     

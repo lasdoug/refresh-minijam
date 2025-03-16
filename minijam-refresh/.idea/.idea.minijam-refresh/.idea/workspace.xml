@@ -4,7 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="478f0da2-6777-4f20-95ad-a341b7355db0" name="Changes" comment="" />
+    <list default="true" id="478f0da2-6777-4f20-95ad-a341b7355db0" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.minijam-refresh/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.minijam-refresh/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DougScripts/CameraLogic.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DougScripts/CameraLogic.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Images/planet1.png.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Images/planet1.png.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LiamScripts/AstronautRotation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LiamScripts/AstronautRotation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LiamScripts/Attractor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LiamScripts/Attractor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/DougScene2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DougScene2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/cameraOrientation.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/cameraOrientation.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,7 +47,8 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;developmentDoug&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -94,7 +110,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1742043011189</updated>
-      <workItem from="1742043013702" duration="6832000" />
+      <workItem from="1742043013702" duration="7598000" />
+      <workItem from="1742059402998" duration="61000" />
+      <workItem from="1742121211466" duration="5834000" />
     </task>
     <servers />
   </component>

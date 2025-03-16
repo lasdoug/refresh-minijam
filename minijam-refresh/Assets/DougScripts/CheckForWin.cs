@@ -1,13 +1,17 @@
 using System;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class CheckForWin : MonoBehaviour
 {
-    private void OnTriggerEnter(Collider other)
+
+    public UnityEvent OnWin;
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Spaceship"))
+        if (other.CompareTag("Astronaut"))
         {
-            print("win");
+            print("win!!!");
+            OnWin.Invoke();
         }
     }
 }

@@ -1,6 +1,7 @@
 using NUnit.Framework;
 using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine.Serialization;
 
 public class PlanetClass : MonoBehaviour
 {
@@ -10,6 +11,8 @@ public class PlanetClass : MonoBehaviour
     public float maxMass = 10f;
     public float minRadius = 1f;
     public float maxRadius = 10f;
+    public float increaseDecreaseAmount;
+    
 
     public float mass { get; private set; }
     public float radius { get; private set; }
@@ -28,31 +31,12 @@ public class PlanetClass : MonoBehaviour
         mass = Random.Range(minMass, maxMass);
         radius = Random.Range(minRadius, maxRadius);
 
-        // Set scale of planet
-        transform.localScale = new Vector3(0.1f, 0.1f, 1f);
-
         // List all planets
         foreach (PlanetClass planet in allPlanets)
         {
             Debug.Log("Planet Mass: " + planet.mass + " Radius: " + planet.radius + " G: " + planet.G);
         }
-
-        // Get circle collider component of planet
-        CircleCollider2D circleCollider = GetComponent<CircleCollider2D>();
-
-        // Assign circle collider radius to equal planet radius
         
-        if(circleCollider != null)
-        {
-            circleCollider.radius = radius;
-            Debug.Log("Circle collider radius assigned, r = " + circleCollider.radius);
-        }
-        else
-        {
-            Debug.LogError("Circle Collider 2D component not found on planet");
-        }
-        
-
     }
 
    
@@ -64,5 +48,25 @@ public class PlanetClass : MonoBehaviour
     private void OnDestroy()
     {
         allPlanets.Remove(this);
+    }
+
+    public void IncreaseScale()
+    {
+        transform.localScale += new Vector3(increaseDecreaseAmount, increaseDecreaseAmount, increaseDecreaseAmount);
+    }
+
+    public void IncreaseMass()
+    {
+        mass += increaseDecreaseAmount;
+    }
+    
+    public void DecreaseScale()
+    {
+        transform.localScale -= new Vector3(increaseDecreaseAmount, increaseDecreaseAmount, increaseDecreaseAmount);
+    }
+
+    public void DecreaseMass()
+    {
+        mass -= increaseDecreaseAmount;
     }
 }

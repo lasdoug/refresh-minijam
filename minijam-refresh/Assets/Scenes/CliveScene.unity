@@ -264,6 +264,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1250734825333964976, guid: d2d0b9a68bcde614397052336ade2b30, type: 3}
+      propertyPath: m_Radius
+      value: 7.77
+      objectReference: {fileID: 0}
+    - target: {fileID: 4090591279811036228, guid: d2d0b9a68bcde614397052336ade2b30, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 5501930942165313407, guid: 0794cf6cae716c4488b7528ca3f22c17, type: 3}
+    - target: {fileID: 4090591279811036228, guid: d2d0b9a68bcde614397052336ade2b30, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6586235729288307808, guid: d2d0b9a68bcde614397052336ade2b30, type: 3}
       propertyPath: m_Name
       value: 'PlanetTest '

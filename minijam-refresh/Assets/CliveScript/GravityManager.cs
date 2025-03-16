@@ -18,6 +18,7 @@ public class GravityManager : MonoBehaviour
     {
         foreach (PlanetClass planet in PlanetClass.allPlanets)
         {
+            // print(planet);
             ApplyGravity(planet);
         }
 
@@ -39,6 +40,7 @@ public class GravityManager : MonoBehaviour
         // Calculate force magnitude and direction
         float forceMagnitude = planet.G * (planet.mass * astronautRb.mass) / (distance * distance); // Calculate force magnitude
         Vector2 force = direction.normalized * forceMagnitude;  // Normalised direction vector and scaled by force magnitude
+        print("force magnitude: " + forceMagnitude);
 
         // Apply force to astronaut
         astronautRb.AddForce(force);    // Apply force to astronaut

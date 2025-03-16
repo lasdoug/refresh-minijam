@@ -803,6 +803,7 @@ GameObject:
   - component: {fileID: 1166916546}
   - component: {fileID: 1166916548}
   - component: {fileID: 1166916547}
+  - component: {fileID: 1166916549}
   m_Layer: 0
   m_Name: Astronaut
   m_TagString: Astronaut
@@ -937,7 +938,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -982,6 +983,18 @@ MonoBehaviour:
   astronautRotation: {fileID: 1166916547}
   maxForce: 0
   maxForcePlanet: {fileID: 0}
+--- !u!114 &1166916549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1166916541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c516a225ba77a646bcac5a2c596bf33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1210253730
 GameObject:
   m_ObjectHideFlags: 0
@@ -1221,7 +1234,7 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 1.57
+  m_Radius: 0.62
 --- !u!114 &1774535165
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1377,9 +1390,10 @@ GameObject:
   m_Component:
   - component: {fileID: 2051684918}
   - component: {fileID: 2051684917}
+  - component: {fileID: 2051684919}
   m_Layer: 0
   m_Name: spaceship
-  m_TagString: Untagged
+  m_TagString: Spaceship
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1448,12 +1462,58 @@ Transform:
   m_GameObject: {fileID: 2051684916}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 22.2, y: 0, z: 0}
+  m_LocalPosition: {x: -11.25, y: 0, z: 0}
   m_LocalScale: {x: 9.640728, y: 9.640728, z: 9.640728}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &2051684919
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2051684916}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.4, y: 0.4}
+    newSize: {x: 0.4, y: 0.4}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 0.4, y: 0.4}
+  m_EdgeRadius: 0
 --- !u!1 &2065258187
 GameObject:
   m_ObjectHideFlags: 0

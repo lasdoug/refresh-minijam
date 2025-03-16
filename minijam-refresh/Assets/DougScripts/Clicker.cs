@@ -33,12 +33,15 @@ public class Clicker : MonoBehaviour
         {
             if (collider != null)
             {
-                collider.gameObject.transform.position = point;
+                if (collider.CompareTag("Planet"))
+                {
+                    collider.gameObject.transform.position = point;
+                }
             }
-            else
-            {
-                print("did not hit");
-            }
+            // else
+            // {
+            //     print("did not hit");
+            // }
         }
     }
 }
